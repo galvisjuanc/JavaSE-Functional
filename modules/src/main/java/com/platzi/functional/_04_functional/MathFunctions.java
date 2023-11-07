@@ -13,6 +13,7 @@ public class MathFunctions {
         };
 
         System.out.println(square.apply(5));
+        System.out.println(square.apply(144));
 
         Function<Integer, Boolean> isOdd = x -> x % 2 == 0;
 
