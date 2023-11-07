@@ -12,7 +12,7 @@ public class SideEffects {
      * del codigo. Por ejemplo en una consola.
      */
     static void helloWorld() {
-        System.out.println("Hello World!");
+        System.out.println("Hello World. I will conquer Java Functions!");
     }
 
 
