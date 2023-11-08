@@ -22,5 +22,10 @@ public class StringFunctions {
         BinaryOperator<Integer> mult = (x,y) -> x * y;
 
         System.out.println(mult.apply(12, 14));
+
+        BiFunction<String, Integer, String> leftPad =
+                (text, number) -> String.format("%" + number + "s", text);
+
+        System.out.println(leftPad.apply("Java" , 10));
     }
 }
