@@ -4,6 +4,7 @@ import com.platzi.functional._06_reference_operator.NombresUtils;
 
 import java.util.List;
 import java.util.function.BiFunction;
+import java.util.function.Predicate;
 
 public class Sintaxis {
 
@@ -14,11 +15,21 @@ public class Sintaxis {
         cursos.forEach(curso -> System.out.println(curso));
 
         usarZero( () -> 2);
+        usarPredicado(text -> text.isEmpty());
+        usarBifunction((x , y) -> x * y);
 
 
     }
 
     static void usarZero(ZeroArgumentos zeroArgumentos) {
+
+    }
+
+    static void usarPredicado(Predicate<String> predicate) {
+
+    }
+
+    static void usarBifunction(BiFunction<Integer, Integer, Integer> operacion) {
 
     }
 
