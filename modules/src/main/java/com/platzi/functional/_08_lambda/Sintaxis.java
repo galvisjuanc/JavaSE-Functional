@@ -18,6 +18,11 @@ public class Sintaxis {
         usarPredicado(text -> text.isEmpty());
         usarBifunction((x , y) -> x * y);
 
+        usarBifunction((x , y) -> {
+            System.out.println("X: " + x + ", Y:" + y);
+            return x - y;
+        });
+
 
     }
 
@@ -36,5 +41,10 @@ public class Sintaxis {
     @FunctionalInterface
     interface  ZeroArgumentos {
         int get();
+    }
+
+    @FunctionalInterface
+    interface OperarNada {
+        void nada();
     }
 }
