@@ -23,6 +23,10 @@ public class Sintaxis {
             return x - y;
         });
 
+        usarNada(() -> {
+            System.out.println("Hola Alumno");
+        });
+
 
     }
 
@@ -35,6 +39,10 @@ public class Sintaxis {
     }
 
     static void usarBifunction(BiFunction<Integer, Integer, Integer> operacion) {
+
+    }
+
+    static void usarNada(OperarNada operarNada) {
 
     }
 
