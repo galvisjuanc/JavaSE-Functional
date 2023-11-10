@@ -10,6 +10,8 @@ public class Chain {
                 .append("Platzi");
 
         Chainer chainer = new Chainer();
+        Chainer chainer2 = chainer.sayHi();
+        Chainer chainer3 = chainer2.sayBye();
 
         chainer.sayHi().sayBye();
     }
