@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class NombresUtils {
-    static <T> List<T> getList(T...elements) {
+    public static <T> List<T> getList(T...elements) {
         return Arrays.asList(elements);
     }
 
