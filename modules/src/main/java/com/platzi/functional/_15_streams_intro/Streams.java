@@ -17,7 +17,7 @@ public class Streams {
 
         for (String course: courseLIst) {
             String newCourseName = course.toLowerCase().replace("!", "!!");
-            System.out.println("Cursos --> " + newCourseName);
+            System.out.println(" Cursos --> " + newCourseName);
         }
 
         Stream<String> coursesStream = Stream.of(
