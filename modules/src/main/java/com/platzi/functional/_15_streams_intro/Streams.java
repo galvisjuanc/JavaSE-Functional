@@ -30,7 +30,6 @@ public class Streams {
         //Optional<Integer> longest = courseLengthStream.max((x, y) -> y - x);
 
         Stream<String> emphasisCourses = coursesStream.map(course -> course + "!");
-
         Stream<String> justJavaCourses = emphasisCourses.filter(course -> course.contains("Java"));
 
         justJavaCourses.forEach(System.out::println);
