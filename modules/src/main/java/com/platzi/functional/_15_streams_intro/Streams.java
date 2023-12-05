@@ -26,9 +26,9 @@ public class Streams {
                 "Backend",
                 "FullStack");
 
-        //Stream<Integer> courseLengthStream = coursesStream.map(course -> course.length());
-        //Optional<Integer> longest = courseLengthStream.max((x, y) -> y - x);
-        //Optional<Integer> longest = courseLengthStream.max((x, y) -> y - x);
+        // Stream<Integer> courseLengthStream = coursesStream.map(course -> course.length());
+        // Optional<Integer> longest = courseLengthStream.max((x, y) -> y - x);
+        // Optional<Integer> longest = courseLengthStream.max((x, y) -> y - x);
 
         Stream<String> emphasisCourses = coursesStream.map(course -> course + "!");
         Stream<String> justJavaCourses = emphasisCourses.filter(course -> course.contains("Java"));
