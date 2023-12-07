@@ -42,6 +42,6 @@ public class Streams {
     }
 
     static <T> Stream<T> addOperator(Stream<T> stream) {
-        return stream.peek(data -> System.out.println("Dato: " + data));
+        return stream.peek(data -> System.out.println("Dato : " + data));
     }
 }
