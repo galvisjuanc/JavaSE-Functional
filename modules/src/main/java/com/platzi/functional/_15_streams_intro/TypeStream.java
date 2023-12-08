@@ -11,5 +11,9 @@ public class TypeStream {
                 .filter(x -> x % 2 == 0)
                 .boxed()
                 .collect(Collectors.toList());
+
+        for (Integer values: numbersList) {
+            System.out.println(values);
+        }
     }
 }
