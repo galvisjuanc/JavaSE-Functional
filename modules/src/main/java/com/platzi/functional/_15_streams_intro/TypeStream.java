@@ -12,7 +12,7 @@ public class TypeStream {
                 .boxed()
                 .collect(Collectors.toList());
 
-        System.out.println("Infinite Stream!!");
+        System.out.println("Infinite Stream!!!");
 
         for (Integer values: numbersList) {
             System.out.println(values);
